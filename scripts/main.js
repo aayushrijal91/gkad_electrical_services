@@ -21,6 +21,13 @@ $("#cta-slider").slick({
     cssEase: "linear"
 });
 
+$("#services-slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: $("#service_prev"),
+    nextArrow: $("#service_next")
+});
+
 $(window).on('scroll', () => {
     if ($(this).scrollTop() >= 600) {
         $('#return-to-top').fadeIn(300);

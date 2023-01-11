@@ -30,6 +30,61 @@ section.banner {
     }
 }
 
+section.services {
+    #services-slider {
+        .service {
+            padding: 0 10px;
+
+            .image {
+                position: relative;
+
+                .overlay {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0, 93, 166, 0.7);
+                    width: 100%;
+                    height: 0;
+                    transition: 0.3s all;
+                    color: $white;
+                    font-size: 20px;
+                    font-weight: 400;
+                    padding: 29px;
+                    display: flex;
+                    align-items: center;
+                    opacity: 0;
+                }
+
+            }
+            
+            &:hover {
+                .image .overlay {
+                    height: 100%;
+                    top: 0;
+                    opacity: 1;
+                }
+
+                // .adjacent-arrow {
+                //     transform: rotate(-45deg);
+                // }
+            }
+
+            .title {
+                background: $primary;
+                color: $white;
+                display: inline-flex;
+                padding: 24px;
+                font-size: 25px;
+                line-height: 1.2;
+                transform: translateY(-38px);
+                position: relative;
+            }
+        }
+    }
+}
+
 footer {
     font-size: 0.875rem;
     background-color: #221f1f;

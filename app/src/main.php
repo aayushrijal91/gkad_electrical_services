@@ -96,6 +96,133 @@
     </div>
 </section>
 
+<section class="services">
+    <div class="container-fluid">
+        <div class="text-white text-center font-ddt-extended fs-35 lh-1">Our Services</div>
+        <div class="row justify-content-center py-5">
+            <div class="col-auto">
+                <a href="javascript:void(0)" id="service_prev">
+                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 9C14.5523 9 15 8.55228 15 8C15 7.44772 14.5523 7 14 7V9ZM0.292893 7.29289C-0.0976305 7.68342 -0.0976305 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#989B99" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="javascript:void(0)" id="service_next">
+                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 9C0.447715 9 0 8.55228 0 8C0 7.44772 0.447715 7 1 7L1 9ZM14.7071 7.29289C15.0976 7.68342 15.0976 8.31658 14.7071 8.70711L8.34315 15.0711C7.95262 15.4616 7.31946 15.4616 6.92893 15.0711C6.53841 14.6805 6.53841 14.0474 6.92893 13.6569L12.5858 8L6.92893 2.34315C6.53841 1.95262 6.53841 1.31946 6.92893 0.928932C7.31946 0.538408 7.95262 0.538408 8.34315 0.928932L14.7071 7.29289ZM1 7L14 7V9L1 9L1 7Z" fill="#989B99" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div id="services-slider">
+            <div class="service move-arrow">
+                <div class="image">
+                    <?= renderImg('service-1.jpg', 'lib') ?>
+                    <div class="overlay">Any electrical system that is left unmaintained or has aged can mean large repair bills, leave you without power, or lead to a dangerous electrical fire. Upgrading your switchboard can help improve the efficiency and safety of your electrical system in your home or business.</div>
+                </div>
+                <div class="title">Switchboard Installations/Upgrades
+                    <span class="adjacent-arrow">
+                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="service move-arrow">
+                <div class="image">
+                    <?= renderImg('service-2.jpg', 'lib') ?>
+                    <div class="overlay">With the ever-increasing cost of electricity power efficient LED lighting can help you lower your energy bills and improve the look of your home or business without needing drastic renovations.</div>
+                </div>
+                <div class="title">LED Lighting Upgrades & Installation
+                    <span class="adjacent-arrow">
+                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="service move-arrow">
+                <div class="image">
+                    <?= renderImg('service-3.jpg', 'lib') ?>
+                    <div class="overlay">GKAD Electrical specializes in hard-wire smoke alarm installations in Melbourne. We are fully licensed and insured to assist in replacing outdated or faulty smoke alarms.</div>
+                </div>
+                <div class="title">Smoke Alarms
+                    <span class="adjacent-arrow">
+                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="service move-arrow">
+                <div class="image">
+                    <?= renderImg('service-4.jpg', 'lib') ?>
+                    <div class="overlay">When renovating or adding an extension to your home, it is critical to have a licensed electrician install all lighting, power points and switchboard upgrades, ensuring your home adjustments don't overload your existing system.</div>
+                </div>
+                <div class="title">Renovations & Extensions
+                    <span class="adjacent-arrow">
+                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="service move-arrow">
+                <div class="image">
+                    <?= renderImg('service-5.jpg', 'lib') ?>
+                    <div class="overlay">From new tv point installations, tv ariel reception issues to cable management and tv mounting, GKAD Electrical can provide all aspects of TV & Data installations, repairs and alterations.</div>
+                </div>
+                <div class="title">TV & Date
+                    <span class="adjacent-arrow">
+                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="service move-arrow">
+                <div class="image">
+                    <?= renderImg('service-6.jpg', 'lib') ?>
+                    <div class="overlay">Gas and electrical appliances must be installed by a licensed professional, to ensure the safety of your home and to validate your appliance warranty.</div>
+                </div>
+                <div class="title">Appliance Installation
+                    <span class="adjacent-arrow">
+                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="service move-arrow">
+                <div class="image">
+                    <?= renderImg('service-7.jpg', 'lib') ?>
+                    <div class="overlay">We can supply and install complete home and business security systems. From CCTV to home alarm systems, keeping you, your family and your business safe from harm.</div>
+                </div>
+                <div class="title">CCTV & Security Systems
+                    <span class="adjacent-arrow">
+                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="brands py-6">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col"><div class="header-divider"></div></div>
+            <div class="col-auto">
+                <div class="text-white fs-35 font-ddt-extended">Brands <span class="text-primary">We Work With</span></div>
+            </div>
+        </div>
+        <div class="row"></div>
+    </div>
+</section>
+
 <footer>
     <div class="container">
         <div class="row justify-content-center justify-content-lg-between align-items-center">
