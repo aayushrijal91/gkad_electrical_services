@@ -85,11 +85,28 @@ section.services {
     }
 }
 
-footer {
-    font-size: 0.875rem;
-    background-color: #221f1f;
+section.about {
+    padding: 87px 0;
+    background: imgUrl('service-van.png') left center;
+}
 
-    @include media-breakpoint-down(sm) {
-        font-size: 0.61rem;
+section.servicing-category {
+    background: $primary;
+    color: $white;
+    font-family: $font-ddt-extended;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 28px 0;
+    transform: rotate(2deg);
+    margin-top: 48px;
+}
+
+section.why-us {
+    padding: 159px 0;
+
+    .header-divider {
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(152, 155, 153, 1), rgba(152, 155, 153, 0));
     }
 }

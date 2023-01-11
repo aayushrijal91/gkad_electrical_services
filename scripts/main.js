@@ -17,7 +17,18 @@ $("#cta-slider").slick({
     variableWidth: true,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 5000,
+    speed: 3000,
+    cssEase: "linear"
+});
+
+$("#category-slider").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    variableWidth: true,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 1000,
     cssEase: "linear"
 });
 
