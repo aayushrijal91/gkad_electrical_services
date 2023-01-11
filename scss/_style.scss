@@ -1,0 +1,40 @@
+@function imgUrl($file, $path: "background"){
+@return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+.header-divider {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(152, 155, 153, 0), rgba(152, 155, 153, 1));
+}
+
+section.banner {
+    background: imgUrl('bulb.jpg') right top;
+    padding: 112px 0;
+
+    .vertical-divider {
+        height: 183px;
+        width: 2px;
+        background: linear-gradient(rgba(152, 155, 153, 0), rgba(152, 155, 153, 1), rgba(152, 155, 153, 0));
+    }
+
+    .cta {
+        background: $primary;
+        color: $white;
+        font-family: $font-ddt-extended;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 28px 0;
+        transform: rotate(-2deg);
+        margin-top: 48px;
+    }
+}
+
+footer {
+    font-size: 0.875rem;
+    background-color: #221f1f;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.61rem;
+    }
+}

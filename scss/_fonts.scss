@@ -1,0 +1,34 @@
+@import url("https://use.typekit.net/enf0iwy.css");
+
+$font-ddt: "ddt", sans-serif;
+$font-ddt-extended: "ddt-extended", sans-serif;
+
+$font-body: $font-ddt;
+
+$font-families: (
+    "ddt": "ddt",
+    "ddt-extended": "ddt-extended",
+);
+
+@each $name,
+$font-family in $font-families {
+    .font-#{$name} {
+        font-family: $font-family, sans-serif;
+    }
+}
+
+$asset-path: "../webfonts/";
+
+/* Fonts includer */
+@mixin font-face($font-family, $font-file, $weight: "normal", $style: "normal") {
+    @font-face {
+        font-family: $font-family;
+        src: local($font-file), url($asset-path + $font-file + ".woff") format("woff"),
+            url($asset-path + $font-file + ".woff2") format("woff2"),
+            url($asset-path + $font-file + ".ttf") format("truetype");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@include font-face("ddt-extended", "DDT W00 Extended Bold", 800);
