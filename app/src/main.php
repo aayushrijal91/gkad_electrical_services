@@ -20,31 +20,31 @@
     </div>
     <div class="header-top-bar d-none d-md-block">
         <div class="container">
-            <div class="row justify-content-center justify-content-lg-between align-items-center">
+            <div class="row justify-content-center justify-content-md-between align-items-center">
                 <div class="col-auto">
                     <a href="./">
                         <?= renderImg("logo.png", "logo") ?>
                     </a>
                 </div>
                 <div class="col-auto">
-                    <div class="row justify-content-center justify-content-lg-end align-items-center py-5">
-                        <div class="col-12 col-md-auto">
-                            <a href="tel:<?= $phone_number ?>" class="btn rounded-0 text-white py-3 px-md-3">
+                    <div class="row align-items-center py-5">
+                        <div class="col-12 col-md-auto d-none d-lg-block">
+                            <a href="tel:<?= $phone_number ?>" class="btn rounded-0 text-white py-3 px-2 px-xl-3">
                                 About
                             </a>
                         </div>
-                        <div class="col-12 col-md-auto">
-                            <a href="tel:<?= $phone_number ?>" class="btn rounded-0 text-white py-3 px-md-3">
+                        <div class="col-12 col-md-auto d-none d-lg-block">
+                            <a href="tel:<?= $phone_number ?>" class="btn rounded-0 text-white py-3 px-2 px-xl-3">
                                 Services
                             </a>
                         </div>
-                        <div class="col-12 col-md-auto">
+                        <div class="col-12 col-md-auto d-none d-lg-block">
                             <a href="tel:<?= $phone_number ?>" class="btn border-primary border-3 rounded-0 text-white py-3 px-md-4">
                                 <?= $phone_number ?>
                             </a>
                         </div>
                         <div class="col-12 col-md-auto">
-                            <a href="tel:<?= $phone_number ?>" class="btn border-primary border-3 rounded-0 text-white py-3 px-md-4 move-arrow">
+                            <a href="#form" class="btn border-primary border-3 rounded-0 text-white py-3 px-md-4 move-arrow">
                                 Contact
                                 <span class="adjacent-arrow"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 4.323C0.626102 4.323 0.322997 4.6261 0.322997 5C0.322997 5.3739 0.626101 5.677 1 5.677L1 4.323ZM12.4787 5.47871C12.7431 5.21433 12.7431 4.78567 12.4787 4.52129L8.17029 0.212865C7.90591 -0.0515212 7.47725 -0.0515212 7.21286 0.212865C6.94848 0.477251 6.94848 0.905906 7.21286 1.17029L11.0426 5L7.21286 8.82971C6.94848 9.0941 6.94848 9.52275 7.21286 9.78714C7.47725 10.0515 7.9059 10.0515 8.17029 9.78714L12.4787 5.47871ZM1 5.677L12 5.677L12 4.323L1 4.323L1 5.677Z" fill="white" />
@@ -66,14 +66,14 @@
         <source src="./assets/images/background/lightbulb-mobile.ogg" type="video/ogg">
         Your browser does not support the video tag.
     </video>
-    <video height="100%" class="d-none d-md-block" id="lightbulb-video" autoplay muted playsinline loop>
+    <video class="d-none d-md-block" id="lightbulb-video" autoplay muted playsinline loop>
         <source src="./assets/images/background/lightbulb.mp4" type="video/mp4">
         <source src="./assets/images/background/lightbulb.ogg" type="video/ogg">
         Your browser does not support the video tag.
     </video>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-md-10 col-lg-9 col-xl-8">
                 <div class="font-ddt-extended fs-55 text-white lh-1_2" data-aos="fade-up">Get <span class="text-primary">Friendly, Local & Professional</span> Melbourne Electricians</div>
                 <a href="tel:<?= $phone_number ?>" class="btn border-primary border-3 d-inline-flex rounded-0 text-white py-3 mt-5 px-md-4 move-arrow">
                     Contact
@@ -93,7 +93,7 @@
                     <div class="col-auto">
                         <div class="vertical-divider"></div>
                     </div>
-                    <div class="col-12 col-md px-md-5">
+                    <div class="col-12 col-md px-lg-5">
                         <div class="sm-cta">
                             <div class="text-uppercase text-primary font-ddt-extended fs-20">Emergency</div>
                             <div class="fs-18 text-grey fw-300">Service</div>
@@ -102,7 +102,7 @@
                     <div class="col-auto">
                         <div class="vertical-divider"></div>
                     </div>
-                    <div class="col-12 col-md px-md-5">
+                    <div class="col-12 col-md px-lg-5">
                         <div class="sm-cta">
                             <div class="text-uppercase text-primary font-ddt-extended fs-20">5 star</div>
                             <div class="fs-18 text-grey fw-300">Customer Reviews</div>
@@ -153,7 +153,7 @@
         <div id="services-slider">
             <div class="service move-arrow">
                 <div class="image">
-                    <?= renderImg('service-1.jpg', 'lib') ?>
+                    <?= renderImg('service-1.jpg', 'lib', 'w-100') ?>
                     <div class="title d-md-none">Switchboard Installations/Upgrades</div>
                     <div class="overlay">Any electrical system that is left unmaintained or has aged can mean large repair bills, leave you without power, or lead to a dangerous electrical fire. Upgrading your switchboard can help improve the efficiency and safety of your electrical system in your home or business.</div>
                 </div>
@@ -167,7 +167,7 @@
             </div>
             <div class="service move-arrow">
                 <div class="image">
-                    <?= renderImg('service-2.jpg', 'lib') ?>
+                    <?= renderImg('service-2.jpg', 'lib', 'w-100') ?>
                     <div class="title d-md-none">LED Lighting Upgrades & Installation</div>
                     <div class="overlay">With the ever-increasing cost of electricity power efficient LED lighting can help you lower your energy bills and improve the look of your home or business without needing drastic renovations.</div>
                 </div>
@@ -181,7 +181,7 @@
             </div>
             <div class="service move-arrow">
                 <div class="image">
-                    <?= renderImg('service-3.jpg', 'lib') ?>
+                    <?= renderImg('service-3.jpg', 'lib', 'w-100') ?>
                     <div class="title d-md-none">Smoke Alarms</div>
                     <div class="overlay">GKAD Electrical specializes in hard-wire smoke alarm installations in Melbourne. We are fully licensed and insured to assist in replacing outdated or faulty smoke alarms.</div>
                 </div>
@@ -195,7 +195,7 @@
             </div>
             <div class="service move-arrow">
                 <div class="image">
-                    <?= renderImg('service-4.jpg', 'lib') ?>
+                    <?= renderImg('service-4.jpg', 'lib', 'w-100') ?>
                     <div class="title d-md-none">Renovations & Extensions</div>
                     <div class="overlay">When renovating or adding an extension to your home, it is critical to have a licensed electrician install all lighting, power points and switchboard upgrades, ensuring your home adjustments don't overload your existing system.</div>
                 </div>
@@ -209,7 +209,7 @@
             </div>
             <div class="service move-arrow">
                 <div class="image">
-                    <?= renderImg('service-5.jpg', 'lib') ?>
+                    <?= renderImg('service-5.jpg', 'lib', 'w-100') ?>
                     <div class="title d-md-none">TV & Date</div>
                     <div class="overlay">From new tv point installations, tv ariel reception issues to cable management and tv mounting, GKAD Electrical can provide all aspects of TV & Data installations, repairs and alterations.</div>
                 </div>
@@ -223,7 +223,7 @@
             </div>
             <div class="service move-arrow">
                 <div class="image">
-                    <?= renderImg('service-6.jpg', 'lib') ?>
+                    <?= renderImg('service-6.jpg', 'lib', 'w-100') ?>
                     <div class="title d-md-none">Appliance Installation</div>
                     <div class="overlay">Gas and electrical appliances must be installed by a licensed professional, to ensure the safety of your home and to validate your appliance warranty.</div>
                 </div>
@@ -237,7 +237,7 @@
             </div>
             <div class="service move-arrow">
                 <div class="image">
-                    <?= renderImg('service-7.jpg', 'lib') ?>
+                    <?= renderImg('service-7.jpg', 'lib', 'w-100') ?>
                     <div class="title d-md-none">CCTV & Security Systems</div>
                     <div class="overlay">We can supply and install complete home and business security systems. From CCTV to home alarm systems, keeping you, your family and your business safe from harm.</div>
                 </div>
@@ -263,26 +263,26 @@
                 <div class="text-white fs-35 font-ddt-extended text-center text-md-start pt-4 pt-md-0 heading">Brands <span class="text-primary">We Work With</span></div>
             </div>
         </div>
-        <div class="row justify-content-between align-items-center pt-3 pt-md-4 pb-5 pb-md-0">
-            <div class="col-3 col-md-auto"><?= renderImg('voltex.png', 'logo') ?></div>
-            <div class="col-3 col-md-auto"><?= renderImg('beacon.png', 'logo') ?></div>
-            <div class="col-3 col-md-auto"><?= renderImg('clipsal.png', 'logo') ?></div>
-            <div class="col-3 col-md-auto"><?= renderImg('hager.png', 'logo') ?></div>
-            <div class="col-3 col-md-auto"><?= renderImg('hpm.png', 'logo') ?></div>
-            <div class="col-3 col-md-auto"><?= renderImg('sal.png', 'logo') ?></div>
-            <div class="col-3 col-md-auto"><?= renderImg('hikvision.png', 'logo') ?></div>
-            <div class="col-3 col-md-auto"><?= renderImg('alhua.png', 'logo') ?></div>
+        <div class="row justify-content-between align-items-center pt-3 pt-md-4 pb-5 pb-md-0 gy-4">
+            <div class="col-3 col-xl-auto text-center"><?= renderImg('voltex.png', 'logo') ?></div>
+            <div class="col-3 col-xl-auto text-center"><?= renderImg('beacon.png', 'logo') ?></div>
+            <div class="col-3 col-xl-auto text-center"><?= renderImg('clipsal.png', 'logo') ?></div>
+            <div class="col-3 col-xl-auto text-center"><?= renderImg('hager.png', 'logo') ?></div>
+            <div class="col-3 col-xl-auto text-center"><?= renderImg('hpm.png', 'logo') ?></div>
+            <div class="col-3 col-xl-auto text-center"><?= renderImg('sal.png', 'logo') ?></div>
+            <div class="col-3 col-xl-auto text-center"><?= renderImg('hikvision.png', 'logo') ?></div>
+            <div class="col-3 col-xl-auto text-center"><?= renderImg('alhua.png', 'logo') ?></div>
         </div>
-        <div class="header-divider"></div>
+        <div class="header-divider d-md-none"></div>
     </div>
 </section>
 
 <section class="about">
     <div class="container">
-        <div class="row justify-content-end">
-            <div class="col-lg-7" data-aos="fade-left">
+        <div class="row justify-content-xl-end">
+            <div class="col-xl-7" data-aos="fade-left">
                 <div class="text-white font-ddt-extended fs-35 lh-1_2 pb-4 heading">As Premier Electrical Contractors, we are committed to delivering customer service that is <span class="text-primary">second to none</span></div>
-                <div class="text-center py-4 d-md-none"><?= renderImg("service-van-mobile.png", 'lib') ?></div>
+                <div class="text-center py-4 d-xl-none"><?= renderImg("service-van-lg.png", 'lib') ?></div>
                 <p class="fs-18 description lh-2 text-white pb-4">With 5+ years of experience, there isn't an electrical problem we haven't come across and solved. From residential to commercial we have cost-effective solutions to suit every budget and project.</p>
 
                 <p class="fs-18 description lh-2 text-white pb-4">Experienced in new builds, renovations and extensions, working together with builders and our clients to deliver a high-quality finish each and every time. GKAD Electricians have extensive knowledge and skills to advise the best options for your needs, without breaking the bank.</p>
@@ -396,7 +396,7 @@
 <section class="contact-us">
     <div class="container">
         <div class="row justify-content-end">
-            <div class="col-lg-7">
+            <div class="col-xl-7">
                 <div class="form" data-aos="fade-left">
                     <div class="fs-35 font-ddt-extended lh-1">Get in touch</div>
                     <div class="row gx-5 py-4">
@@ -468,7 +468,7 @@
 
 <footer>
     <div class="container pt-6 pt-md-0">
-        <div class="row justify-content-center justify-content-lg-between align-items-center py-4 fs-12 gy-5">
+        <div class="row justify-content-center justify-content-md-between align-items-center py-4 fs-12 gy-5">
             <div class="col-auto">
                 <div class="row gx-4 gx-md-3 text-dark justify-content-center">
                     <div class="col-auto text-center">Copyright <?= date('Y') ?></div>

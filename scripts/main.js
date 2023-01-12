@@ -39,7 +39,7 @@ $("#services-slider").slick({
     nextArrow: $("#service_next"),
     responsive: [
         {
-            breakpoint: 540,
+            breakpoint: 1200,
             settings: {
                 slidesToShow: 1,
             }
