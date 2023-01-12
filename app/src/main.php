@@ -418,6 +418,7 @@
                     </div>
                     <div class="header-divider-invert"></div>
                     <form action="./src/form" method="POST" id="form">
+                        <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="name" placeholder="Name" required>

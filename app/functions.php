@@ -3,9 +3,9 @@ include __DIR__ . '/env.php';
 
 $site = "GKAD Electrical Services";
 $phone_number = "0403 299 893";
-$admin_email = 'arijal@aiims.com.au';
+$admin_email = 'arijal@aiims.com.au'; //info@gkadelectrical.com.au
 $bcc_email = "";
-$no_reply_email = 'info@website.com.au';
+$no_reply_email = 'info@gkadelectrical.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
 
