@@ -56,22 +56,28 @@
                 </a>
                 <div class="row align-items-center pt-6">
                     <div class="col">
-                        <div class="text-uppercase text-primary font-ddt-extended fs-20">Lifetime</div>
-                        <div class="fs-18 text-grey fw-300">Workmanship Guarantee</div>
+                        <div class="sm-cta">
+                            <div class="text-uppercase text-primary font-ddt-extended fs-20">Lifetime</div>
+                            <div class="fs-18 text-grey fw-300">Workmanship Guarantee</div>
+                        </div>
                     </div>
                     <div class="col-auto">
                         <div class="vertical-divider"></div>
                     </div>
                     <div class="col px-5">
-                        <div class="text-uppercase text-primary font-ddt-extended fs-20">Emergency</div>
-                        <div class="fs-18 text-grey fw-300">Service</div>
+                        <div class="sm-cta">
+                            <div class="text-uppercase text-primary font-ddt-extended fs-20">Emergency</div>
+                            <div class="fs-18 text-grey fw-300">Service</div>
+                        </div>
                     </div>
                     <div class="col-auto">
                         <div class="vertical-divider"></div>
                     </div>
                     <div class="col px-5">
-                        <div class="text-uppercase text-primary font-ddt-extended fs-20">5 star</div>
-                        <div class="fs-18 text-grey fw-300">Customer Reviews</div>
+                        <div class="sm-cta">
+                            <div class="text-uppercase text-primary font-ddt-extended fs-20">5 star</div>
+                            <div class="fs-18 text-grey fw-300">Customer Reviews</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -237,7 +243,7 @@
 <section class="about">
     <div class="container">
         <div class="row justify-content-end">
-            <div class="col-lg-7">
+            <div class="col-lg-7" data-aos="fade-left">
                 <div class="text-white font-ddt-extended fs-35 lh-1_2 pb-4">As Premier Electrical Contractors, we are committed to delivering customer service that is <span class="text-primary">second to none</span></div>
                 <p class="fs-18 lh-2 text-white pb-4">With 5+ years of experience, there isn't an electrical problem we haven't come across and solved. From residential to commercial we have cost-effective solutions to suit every budget and project.</p>
 
@@ -294,14 +300,14 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-auto">
-                <div class="text-white fs-35 font-ddt-extended">Why <span class="text-primary">Choose Us</span></div>
+                <div class="text-white fs-35 font-ddt-extended" data-aos="fade-right">Why <span class="text-primary">Choose Us</span></div>
             </div>
             <div class="col">
-                <div class="header-divider"></div>
+                <div class="header-divider-invert" data-aos="fade-right"></div>
             </div>
         </div>
         <div class="row pt-5">
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up">
                 <div><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="50" cy="50" r="49" stroke="#005DA6" stroke-width="2" />
                         <path d="M36.0139 59.1184L43.1419 52.5801L45.6078 47.6231C46.1434 46.5471 48.2583 46.9153 48.6878 48.0365C49.1133 49.1495 48.6369 52.101 48.049 53.1578L45.7909 57.2073L54.0837 56.698C55.2912 56.6241 56.4409 57.5112 56.4409 58.7131C56.4409 59.7673 55.8103 60.705 54.841 60.9815C54.7047 61.0199 54.0989 61.0705 53.9502 61.0568L53.7409 61.039L54.5353 61.5401C54.9167 61.7796 55.1783 62.1931 55.2072 62.5764C55.2788 63.5155 54.7336 64.3656 53.9144 64.7339C53.7808 64.7941 53.0772 64.775 52.9313 64.8078C53.047 64.879 53.7189 65.0255 53.8194 65.1158C54.2242 65.4786 54.4954 65.9906 54.5395 66.5711C54.6111 67.5115 54.0645 68.3631 53.2438 68.7299C53.1117 68.7888 52.1107 68.8025 51.9647 68.8353C52.1465 68.9476 53.1722 69.1174 53.3154 69.2748C53.628 69.6211 53.8331 70.0688 53.8703 70.5657C53.9612 71.765 53.0511 72.8834 51.8436 72.9094L42.9518 73.1024C39.7135 73.1723 36.8854 71.3803 35.2415 68.9284" stroke="#005DA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -317,7 +323,7 @@
                     </svg></div>
                 <div class="text-white fs-18 fw-300">Customer Satisfaction Guaranteed</div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up">
                 <div><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="50" cy="50" r="48.5" stroke="#005DA6" stroke-width="3" />
                         <path d="M58.9282 51.2788C61.8454 43.6711 58.0076 35.1525 50.356 32.252C42.7045 29.3514 34.1369 33.1673 31.2196 40.7751C28.3024 48.3828 32.1403 56.9014 39.7918 59.8019C47.4433 62.7025 56.011 58.8866 58.9282 51.2788Z" stroke="#005DA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -330,7 +336,7 @@
                     </svg></div>
                 <div class="text-white fs-18 fw-300">We Care About the Details</div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" data-aos="fade-up">
                 <div><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="50" cy="50" r="48.5" stroke="#005DA6" stroke-width="3" />
                         <path d="M26.4245 57.3936C25.9431 57.617 25.4678 57.9405 24.9844 58.2765C24.1679 58.843 23.3229 59.4471 22.356 59.6812C22.0818 59.7742 21.7995 59.8296 21.507 59.8332C21.2145 59.8367 20.9119 59.7867 20.597 59.6687C20.595 59.6669 20.593 59.6634 20.5909 59.6616L20.5848 59.6544C20.5706 59.6509 20.5584 59.6473 20.5442 59.6437C20.53 59.6401 20.5178 59.6366 20.5036 59.633C20.2558 59.3577 20.1034 59.0682 20.0202 58.7715C19.9389 58.4748 19.9267 58.1674 19.9653 57.8547C19.9653 56.9878 20.2984 56.1175 20.6031 55.281C20.9098 54.4446 21.1861 53.6421 21.0723 52.9111C20.7433 52.1069 19.8719 51.5403 18.9619 50.9451C18.0519 50.35 17.1034 49.7262 16.622 48.8076C16.5123 48.6342 16.427 48.4483 16.3701 48.2482C16.3153 48.048 16.2889 47.8335 16.299 47.6012C16.299 47.5797 16.299 47.5583 16.297 47.5386C16.297 47.5172 16.297 47.4957 16.297 47.4743C16.4798 47.2062 16.6951 46.9989 16.9348 46.8416C17.1745 46.6843 17.4405 46.5753 17.7249 46.5002C18.641 46.1553 19.6952 46.1714 20.7047 46.1857C21.7142 46.1982 22.681 46.2071 23.4244 45.8461C24.1008 45.2974 24.4035 44.377 24.7224 43.4172C25.0413 42.4575 25.3784 41.4584 26.1259 40.7542C26.2803 40.5773 26.4611 40.42 26.6703 40.2931C26.8815 40.1644 27.1232 40.0643 27.4035 40C27.4076 40 27.4117 40.0018 27.4157 40.0036L27.4279 40.0071C27.4279 40.0071 27.436 40.0054 27.4401 40.0036L27.4523 40C27.7326 40.0661 27.9743 40.1662 28.1835 40.2931C28.3948 40.4218 28.5735 40.5773 28.7279 40.7542C29.1037 41.1099 29.3758 41.5406 29.5952 42.0035" stroke="#005DA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -353,7 +359,57 @@
     <div class="container">
         <div class="row justify-content-end">
             <div class="col-lg-7">
-
+                <div class="form" data-aos="fade-left">
+                    <div class="fs-35 font-ddt-extended lh-1">Get in touch</div>
+                    <div class="row gx-5 py-4">
+                        <div class="col-auto">
+                            <a href="tel:<?= $phone_number ?>" class="btn text-white p-0 fw-300 fs-18"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.13 43.26C33.7998 43.26 43.26 33.7998 43.26 22.13C43.26 10.4602 33.7998 1 22.13 1C10.4602 1 1 10.4602 1 22.13C1 33.7998 10.4602 43.26 22.13 43.26Z" stroke="white" stroke-miterlimit="10" />
+                                    <path d="M27.2143 33.1061C18.3317 33.1061 11.1089 25.8833 11.1089 17.0006C11.1089 15.9688 11.2136 14.9071 11.4229 13.8753C11.6323 12.8135 12.5146 11.9611 13.5912 11.7667L16.7166 11.1985C17.3297 11.0789 17.9279 11.4826 18.0625 12.0957L19.4532 18.2717C19.5728 18.84 19.2738 19.4082 18.7504 19.6176L17.8232 19.9765C17.7036 20.0214 17.6288 20.1709 17.6737 20.2905C18.6906 23.2514 21.0084 25.5543 23.9843 26.5562C24.1039 26.6011 24.2385 26.5413 24.2983 26.4217L24.9264 25.1207C25.1656 24.6272 25.704 24.373 26.2423 24.4926L32.2688 25.8684C32.8819 26.0029 33.2857 26.6161 33.1511 27.2292L32.4632 30.6686C32.2538 31.7453 31.4164 32.5827 30.3547 32.807C29.3079 33.0164 28.2611 33.1211 27.2143 33.1211V33.1061Z" fill="white" />
+                                </svg> <span class="ps-3"><?= $phone_number ?></span>
+                            </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="tel:<?= $phone_number ?>" class="btn text-white p-0 fw-300 fs-18 text-lowercase">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.13 43.26C33.7998 43.26 43.26 33.7998 43.26 22.13C43.26 10.4602 33.7998 1 22.13 1C10.4602 1 1 10.4602 1 22.13C1 33.7998 10.4602 43.26 22.13 43.26Z" stroke="white" stroke-miterlimit="10" />
+                                    <path d="M34.6317 29.2032L28.4707 22.5785C28.3062 22.3991 28.3062 22.115 28.4707 21.9206L34.6317 15.4754C34.9308 15.1614 35.4542 15.3707 35.4542 15.8044V28.8742C35.4542 29.3078 34.9308 29.5172 34.6317 29.2032ZM9.62862 15.4754L15.7897 21.9206C15.9691 22.1 15.9691 22.3841 15.7897 22.5785L9.62862 29.2032C9.32954 29.5172 8.80615 29.3078 8.80615 28.8742V15.8044C8.80615 15.3707 9.32954 15.1614 9.62862 15.4754ZM16.8215 23.745C17.0009 23.5506 17.3299 23.5356 17.5094 23.745L19.0197 25.3301C19.917 26.0778 20.9937 26.4516 22.1003 26.4516C23.2069 26.4516 24.3583 26.0628 25.2855 25.2703L26.736 23.745C26.9304 23.5506 27.2444 23.5506 27.4239 23.745L33.4503 30.22C33.7345 30.5191 33.5102 31.0126 33.1064 31.0126H11.1539C10.7352 31.0126 10.5259 30.5191 10.81 30.22L16.8364 23.745H16.8215ZM33.5251 13.2622C33.9438 13.2622 34.1532 13.7706 33.8691 14.0697L24.2536 24.1487C23.0274 25.1656 21.2479 25.1656 20.0964 24.2085L10.4062 14.0697C10.1221 13.7706 10.3315 13.2622 10.7502 13.2622H33.5251Z" fill="white" />
+                                </svg> <span class="ps-3"><?= $admin_email ?></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-divider-invert"></div>
+                    <form action="./src/form" method="POST">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <input type="text" class="form-control" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="col-6">
+                                <input type="tel" class="form-control" name="phone" placeholder="Number" required>
+                            </div>
+                            <div class="col-6">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="col-6">
+                                <select name="service" class="form-control form-select">
+                                    <option>Select service</option>
+                                    <option>Switchboard Installations/Upgrades</option>
+                                    <option>LED Lighting Upgrades & Installation</option>
+                                    <option>Smoke Alarms</option>
+                                    <option>Renovations & Extensions</option>
+                                    <option>TV & Date</option>
+                                    <option>Appliance Installation</option>
+                                    <option>CCTV & Security Systems</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <button type="submit" class="btn btn-black border-0 rounded-0 text-white py-3 px-md-4 move-arrow">SUBMIT <span class="adjacent-arrow"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 4.323C0.626102 4.323 0.322997 4.6261 0.322997 5C0.322997 5.3739 0.626101 5.677 1 5.677L1 4.323ZM12.4787 5.47871C12.7431 5.21433 12.7431 4.78567 12.4787 4.52129L8.17029 0.212865C7.90591 -0.0515212 7.47725 -0.0515212 7.21286 0.212865C6.94848 0.477251 6.94848 0.905906 7.21286 1.17029L11.0426 5L7.21286 8.82971C6.94848 9.0941 6.94848 9.52275 7.21286 9.78714C7.47725 10.0515 7.9059 10.0515 8.17029 9.78714L12.4787 5.47871ZM1 5.677L12 5.677L12 4.323L1 4.323L1 5.677Z" fill="white" />
+                                    </svg></span></button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

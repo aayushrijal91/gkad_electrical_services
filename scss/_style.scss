@@ -8,6 +8,12 @@
     background: linear-gradient(90deg, rgba(152, 155, 153, 0), rgba(152, 155, 153, 1));
 }
 
+.header-divider-invert {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(152, 155, 153, 1), rgba(152, 155, 153, 0));
+}
+
 section.banner {
     background: imgUrl('bulb.jpg') right top;
     padding: 112px 0;
@@ -16,6 +22,13 @@ section.banner {
         height: 183px;
         width: 2px;
         background: linear-gradient(rgba(152, 155, 153, 0), rgba(152, 155, 153, 1), rgba(152, 155, 153, 0));
+    }
+
+    .sm-cta {
+        transition: 0.2s all;
+        &:hover {
+            transform: translateY(-10px);
+        }
     }
 
     .cta {
@@ -102,11 +115,28 @@ section.servicing-category {
 }
 
 section.why-us {
-    padding: 159px 0;
+    padding: 159px 0 127px;
+}
 
-    .header-divider {
-        height: 2px;
-        width: 100%;
-        background: linear-gradient(90deg, rgba(152, 155, 153, 1), rgba(152, 155, 153, 0));
+section.contact-us {
+    background: imgUrl('map.jpg') left center;
+    background-size: contain;
+    padding: 100px 0;
+    margin-bottom: 153px;
+
+    .form {
+        background: $primary;
+        padding: 72px 70px;
+        color: $white;
+
+        form {
+            margin-top: 36px;
+
+            .form-control {
+                border-radius: 0;
+                border: 0;
+                height: 54px;
+            }
+        }
     }
 }
