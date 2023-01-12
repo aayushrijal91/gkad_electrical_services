@@ -29,12 +29,12 @@
                 <div class="col-auto">
                     <div class="row align-items-center py-5">
                         <div class="col-12 col-md-auto d-none d-lg-block">
-                            <a href="tel:<?= $phone_number ?>" class="btn rounded-0 text-white py-3 px-2 px-xl-3">
+                            <a href="#about" class="btn rounded-0 text-white py-3 px-2 px-xl-3">
                                 About
                             </a>
                         </div>
                         <div class="col-12 col-md-auto d-none d-lg-block">
-                            <a href="tel:<?= $phone_number ?>" class="btn rounded-0 text-white py-3 px-2 px-xl-3">
+                            <a href="#services" class="btn rounded-0 text-white py-3 px-2 px-xl-3">
                                 Services
                             </a>
                         </div>
@@ -75,7 +75,7 @@
         <div class="row">
             <div class="col-md-10 col-lg-9 col-xl-8">
                 <div class="font-ddt-extended fs-55 text-white lh-1_2" data-aos="fade-up">Get <span class="text-primary">Friendly, Local & Professional</span> Melbourne Electricians</div>
-                <a href="tel:<?= $phone_number ?>" class="btn border-primary border-3 d-inline-flex rounded-0 text-white py-3 mt-5 px-md-4 move-arrow">
+                <a href="#form" class="btn border-primary border-3 d-inline-flex rounded-0 text-white py-3 mt-5 px-md-4 move-arrow">
                     Contact
                     <span class="adjacent-arrow">
                         <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +131,7 @@
     </div>
 </section>
 
-<section class="services">
+<section class="services" id="services">
     <div class="container-fluid">
         <div class="text-white text-center font-ddt-extended fs-35 lh-1">Our Services</div>
         <div class="row justify-content-center py-4 py-md-5">
@@ -277,7 +277,7 @@
     </div>
 </section>
 
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <div class="row justify-content-xl-end">
             <div class="col-xl-7" data-aos="fade-left">
@@ -417,7 +417,7 @@
                         </div>
                     </div>
                     <div class="header-divider-invert"></div>
-                    <form action="./src/form" method="POST">
+                    <form action="./src/form" method="POST" id="form">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="name" placeholder="Name" required>

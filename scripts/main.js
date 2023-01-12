@@ -1,6 +1,6 @@
 AOS.init({ duration: 800 });
 
-document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
+document.querySelectorAll('a[href="#form"],a[href="#about"],a[href="#services"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
