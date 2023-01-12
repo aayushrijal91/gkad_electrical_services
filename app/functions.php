@@ -2,7 +2,7 @@
 include __DIR__ . '/env.php';
 
 $site = "GKAD Electrical Services";
-$phone_number = "0432 406 340";
+$phone_number = "0403 299 893";
 $admin_email = 'arijal@aiims.com.au';
 $bcc_email = "";
 $no_reply_email = 'info@website.com.au';

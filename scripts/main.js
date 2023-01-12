@@ -1,4 +1,4 @@
-AOS.init({ duration: 1500 });
+AOS.init({ duration: 800 });
 
 document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
@@ -36,7 +36,15 @@ $("#services-slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: $("#service_prev"),
-    nextArrow: $("#service_next")
+    nextArrow: $("#service_next"),
+    responsive: [
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
 
 $(window).on('scroll', () => {

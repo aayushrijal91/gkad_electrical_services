@@ -2,6 +2,10 @@ img {
     max-width: 100%;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: $font-body;
     overflow-x: hidden;
@@ -19,9 +23,10 @@ body {
     line-height: 1;
     text-transform: uppercase;
     font-weight: 400;
+    letter-spacing: 0.2em;
 
     @include media-breakpoint-down(sm) {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     &:focus {

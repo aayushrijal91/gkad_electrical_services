@@ -1,5 +1,24 @@
 <header>
-    <div class="header-top-bar">
+    <div class="header-top-mobile d-md-none">
+        <div class="container">
+            <div class="row justify-content-between py-4">
+                <div class="col-auto">
+                    <a href="./">
+                        <?= renderImg("logo-mobile.png", "logo") ?>
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="tel: <?= $phone_number ?>">
+                        <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="21.5" cy="21.5" r="21" stroke="#005DA6" />
+                            <path d="M25.7917 30.7117C24.7192 30.7545 23.6795 30.2662 22.6475 29.7872C17.7985 27.5363 14.4597 23.8813 12.6076 18.8742C11.6356 16.2464 12.9363 13.4083 15.5399 12.3997C16.2074 12.1412 16.7354 12.3218 17.0859 12.9472C17.6879 14.0197 18.2853 15.0953 18.878 16.1732C19.23 16.8134 19.1817 17.3438 18.7129 17.8936C18.2674 18.417 17.811 18.9318 17.3453 19.4373C17.1981 19.5969 17.1895 19.7254 17.2791 19.917C18.5088 22.5627 20.4442 24.4973 23.0915 25.7248C23.2885 25.8159 23.4139 25.7933 23.5704 25.65C24.0767 25.185 24.5915 24.7287 25.1141 24.2824C25.6476 23.8275 26.1897 23.7699 26.8026 24.1064C27.9039 24.71 29.002 25.3206 30.0955 25.9382C30.664 26.2591 30.844 26.7856 30.622 27.3954C29.9 29.3767 28.0075 30.707 25.7917 30.7109V30.7117Z" fill="#005DA6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-top-bar d-none d-md-block">
         <div class="container">
             <div class="row justify-content-center justify-content-lg-between align-items-center">
                 <div class="col-auto">
@@ -42,10 +61,20 @@
 <div class="header-divider"></div>
 
 <section class="banner">
+    <video class="d-md-none" id="lightbulb-video-mobile" autoplay muted playsinline loop>
+        <source src="./assets/images/background/lightbulb-mobile.mp4" type="video/mp4">
+        <source src="./assets/images/background/lightbulb-mobile.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    <video height="100%" class="d-none d-md-block" id="lightbulb-video" autoplay muted playsinline loop>
+        <source src="./assets/images/background/lightbulb.mp4" type="video/mp4">
+        <source src="./assets/images/background/lightbulb.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <div class="font-ddt-extended fs-55 text-white lh-1_2">Get <span class="text-primary">Friendly, Local & Professional</span> Melbourne Electricians</div>
+                <div class="font-ddt-extended fs-55 text-white lh-1_2" data-aos="fade-up">Get <span class="text-primary">Friendly, Local & Professional</span> Melbourne Electricians</div>
                 <a href="tel:<?= $phone_number ?>" class="btn border-primary border-3 d-inline-flex rounded-0 text-white py-3 mt-5 px-md-4 move-arrow">
                     Contact
                     <span class="adjacent-arrow">
@@ -54,8 +83,8 @@
                         </svg>
                     </span>
                 </a>
-                <div class="row align-items-center pt-6">
-                    <div class="col">
+                <div class="row justify-content-center align-items-center pt-6 gy-4  gy-md-3">
+                    <div class="col-12 col-md">
                         <div class="sm-cta">
                             <div class="text-uppercase text-primary font-ddt-extended fs-20">Lifetime</div>
                             <div class="fs-18 text-grey fw-300">Workmanship Guarantee</div>
@@ -64,7 +93,7 @@
                     <div class="col-auto">
                         <div class="vertical-divider"></div>
                     </div>
-                    <div class="col px-5">
+                    <div class="col-12 col-md px-md-5">
                         <div class="sm-cta">
                             <div class="text-uppercase text-primary font-ddt-extended fs-20">Emergency</div>
                             <div class="fs-18 text-grey fw-300">Service</div>
@@ -73,7 +102,7 @@
                     <div class="col-auto">
                         <div class="vertical-divider"></div>
                     </div>
-                    <div class="col px-5">
+                    <div class="col-12 col-md px-md-5">
                         <div class="sm-cta">
                             <div class="text-uppercase text-primary font-ddt-extended fs-20">5 star</div>
                             <div class="fs-18 text-grey fw-300">Customer Reviews</div>
@@ -105,7 +134,7 @@
 <section class="services">
     <div class="container-fluid">
         <div class="text-white text-center font-ddt-extended fs-35 lh-1">Our Services</div>
-        <div class="row justify-content-center py-5">
+        <div class="row justify-content-center py-4 py-md-5">
             <div class="col-auto">
                 <a href="javascript:void(0)" id="service_prev">
                     <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,9 +154,10 @@
             <div class="service move-arrow">
                 <div class="image">
                     <?= renderImg('service-1.jpg', 'lib') ?>
+                    <div class="title d-md-none">Switchboard Installations/Upgrades</div>
                     <div class="overlay">Any electrical system that is left unmaintained or has aged can mean large repair bills, leave you without power, or lead to a dangerous electrical fire. Upgrading your switchboard can help improve the efficiency and safety of your electrical system in your home or business.</div>
                 </div>
-                <div class="title">Switchboard Installations/Upgrades
+                <div class="title d-none d-md-inline-flex">Switchboard Installations/Upgrades
                     <span class="adjacent-arrow">
                         <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
@@ -138,9 +168,10 @@
             <div class="service move-arrow">
                 <div class="image">
                     <?= renderImg('service-2.jpg', 'lib') ?>
+                    <div class="title d-md-none">LED Lighting Upgrades & Installation</div>
                     <div class="overlay">With the ever-increasing cost of electricity power efficient LED lighting can help you lower your energy bills and improve the look of your home or business without needing drastic renovations.</div>
                 </div>
-                <div class="title">LED Lighting Upgrades & Installation
+                <div class="title d-none d-md-inline-flex">LED Lighting Upgrades & Installation
                     <span class="adjacent-arrow">
                         <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
@@ -151,9 +182,10 @@
             <div class="service move-arrow">
                 <div class="image">
                     <?= renderImg('service-3.jpg', 'lib') ?>
+                    <div class="title d-md-none">Smoke Alarms</div>
                     <div class="overlay">GKAD Electrical specializes in hard-wire smoke alarm installations in Melbourne. We are fully licensed and insured to assist in replacing outdated or faulty smoke alarms.</div>
                 </div>
-                <div class="title">Smoke Alarms
+                <div class="title d-none d-md-inline-flex">Smoke Alarms
                     <span class="adjacent-arrow">
                         <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
@@ -164,9 +196,10 @@
             <div class="service move-arrow">
                 <div class="image">
                     <?= renderImg('service-4.jpg', 'lib') ?>
+                    <div class="title d-md-none">Renovations & Extensions</div>
                     <div class="overlay">When renovating or adding an extension to your home, it is critical to have a licensed electrician install all lighting, power points and switchboard upgrades, ensuring your home adjustments don't overload your existing system.</div>
                 </div>
-                <div class="title">Renovations & Extensions
+                <div class="title d-none d-md-inline-flex">Renovations & Extensions
                     <span class="adjacent-arrow">
                         <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
@@ -177,9 +210,10 @@
             <div class="service move-arrow">
                 <div class="image">
                     <?= renderImg('service-5.jpg', 'lib') ?>
+                    <div class="title d-md-none">TV & Date</div>
                     <div class="overlay">From new tv point installations, tv ariel reception issues to cable management and tv mounting, GKAD Electrical can provide all aspects of TV & Data installations, repairs and alterations.</div>
                 </div>
-                <div class="title">TV & Date
+                <div class="title d-none d-md-inline-flex">TV & Date
                     <span class="adjacent-arrow">
                         <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
@@ -190,9 +224,10 @@
             <div class="service move-arrow">
                 <div class="image">
                     <?= renderImg('service-6.jpg', 'lib') ?>
+                    <div class="title d-md-none">Appliance Installation</div>
                     <div class="overlay">Gas and electrical appliances must be installed by a licensed professional, to ensure the safety of your home and to validate your appliance warranty.</div>
                 </div>
-                <div class="title">Appliance Installation
+                <div class="title d-none d-md-inline-flex">Appliance Installation
                     <span class="adjacent-arrow">
                         <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
@@ -203,9 +238,10 @@
             <div class="service move-arrow">
                 <div class="image">
                     <?= renderImg('service-7.jpg', 'lib') ?>
+                    <div class="title d-md-none">CCTV & Security Systems</div>
                     <div class="overlay">We can supply and install complete home and business security systems. From CCTV to home alarm systems, keeping you, your family and your business safe from harm.</div>
                 </div>
-                <div class="title">CCTV & Security Systems
+                <div class="title d-none d-md-inline-flex">CCTV & Security Systems
                     <span class="adjacent-arrow">
                         <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM18.7071 8.70711C19.0976 8.31658 19.0976 7.68342 18.7071 7.29289L12.3431 0.928933C11.9526 0.538409 11.3195 0.538409 10.9289 0.928933C10.5384 1.31946 10.5384 1.95262 10.9289 2.34315L16.5858 8L10.9289 13.6569C10.5384 14.0474 10.5384 14.6805 10.9289 15.0711C11.3195 15.4616 11.9526 15.4616 12.3431 15.0711L18.7071 8.70711ZM1 9L18 9L18 7L1 7L1 9Z" fill="white" />
@@ -217,26 +253,27 @@
     </div>
 </section>
 
-<section class="brands py-6">
+<section class="brands py-5 py-md-6">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col">
+            <div class="col-md">
                 <div class="header-divider"></div>
             </div>
-            <div class="col-auto">
-                <div class="text-white fs-35 font-ddt-extended">Brands <span class="text-primary">We Work With</span></div>
+            <div class="col-md-auto">
+                <div class="text-white fs-35 font-ddt-extended text-center text-md-start pt-4 pt-md-0 heading">Brands <span class="text-primary">We Work With</span></div>
             </div>
         </div>
-        <div class="row justify-content-between align-items-center pt-4">
-            <div class="col-auto"><?= renderImg('voltex.png', 'logo') ?></div>
-            <div class="col-auto"><?= renderImg('beacon.png', 'logo') ?></div>
-            <div class="col-auto"><?= renderImg('clipsal.png', 'logo') ?></div>
-            <div class="col-auto"><?= renderImg('hager.png', 'logo') ?></div>
-            <div class="col-auto"><?= renderImg('hpm.png', 'logo') ?></div>
-            <div class="col-auto"><?= renderImg('sal.png', 'logo') ?></div>
-            <div class="col-auto"><?= renderImg('hikvision.png', 'logo') ?></div>
-            <div class="col-auto"><?= renderImg('alhua.png', 'logo') ?></div>
+        <div class="row justify-content-between align-items-center pt-3 pt-md-4 pb-5 pb-md-0">
+            <div class="col-3 col-md-auto"><?= renderImg('voltex.png', 'logo') ?></div>
+            <div class="col-3 col-md-auto"><?= renderImg('beacon.png', 'logo') ?></div>
+            <div class="col-3 col-md-auto"><?= renderImg('clipsal.png', 'logo') ?></div>
+            <div class="col-3 col-md-auto"><?= renderImg('hager.png', 'logo') ?></div>
+            <div class="col-3 col-md-auto"><?= renderImg('hpm.png', 'logo') ?></div>
+            <div class="col-3 col-md-auto"><?= renderImg('sal.png', 'logo') ?></div>
+            <div class="col-3 col-md-auto"><?= renderImg('hikvision.png', 'logo') ?></div>
+            <div class="col-3 col-md-auto"><?= renderImg('alhua.png', 'logo') ?></div>
         </div>
+        <div class="header-divider"></div>
     </div>
 </section>
 
@@ -244,12 +281,13 @@
     <div class="container">
         <div class="row justify-content-end">
             <div class="col-lg-7" data-aos="fade-left">
-                <div class="text-white font-ddt-extended fs-35 lh-1_2 pb-4">As Premier Electrical Contractors, we are committed to delivering customer service that is <span class="text-primary">second to none</span></div>
-                <p class="fs-18 lh-2 text-white pb-4">With 5+ years of experience, there isn't an electrical problem we haven't come across and solved. From residential to commercial we have cost-effective solutions to suit every budget and project.</p>
+                <div class="text-white font-ddt-extended fs-35 lh-1_2 pb-4 heading">As Premier Electrical Contractors, we are committed to delivering customer service that is <span class="text-primary">second to none</span></div>
+                <div class="text-center py-4 d-md-none"><?= renderImg("service-van-mobile.png", 'lib') ?></div>
+                <p class="fs-18 description lh-2 text-white pb-4">With 5+ years of experience, there isn't an electrical problem we haven't come across and solved. From residential to commercial we have cost-effective solutions to suit every budget and project.</p>
 
-                <p class="fs-18 lh-2 text-white pb-4">Experienced in new builds, renovations and extensions, working together with builders and our clients to deliver a high-quality finish each and every time. GKAD Electricians have extensive knowledge and skills to advise the best options for your needs, without breaking the bank.</p>
+                <p class="fs-18 description lh-2 text-white pb-4">Experienced in new builds, renovations and extensions, working together with builders and our clients to deliver a high-quality finish each and every time. GKAD Electricians have extensive knowledge and skills to advise the best options for your needs, without breaking the bank.</p>
 
-                <p class="fs-18 lh-2 text-white">We are licensed and insured, highly qualified and certified ensuring all work is 100% compliant. Customer satisfaction is our number 1 priority and we achieve this by being honest, reliable and transparent throughout each project.</p>
+                <p class="fs-18 description lh-2 text-white">We are licensed and insured, highly qualified and certified ensuring all work is 100% compliant. Customer satisfaction is our number 1 priority and we achieve this by being honest, reliable and transparent throughout each project.</p>
             </div>
         </div>
     </div>
@@ -299,15 +337,15 @@
 <section class="why-us">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-auto">
-                <div class="text-white fs-35 font-ddt-extended" data-aos="fade-right">Why <span class="text-primary">Choose Us</span></div>
+            <div class="col-12 col-md-auto">
+                <div class="text-white fs-35 font-ddt-extended text-center" data-aos="fade-right">Why <span class="text-primary">Choose Us</span></div>
             </div>
-            <div class="col">
+            <div class="col d-none d-md-block">
                 <div class="header-divider-invert" data-aos="fade-right"></div>
             </div>
         </div>
-        <div class="row pt-5">
-            <div class="col-md-4" data-aos="fade-up">
+        <div class="row pt-5 gy-5">
+            <div class="col-md-4 text-center text-md-start" data-aos="fade-up">
                 <div><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="50" cy="50" r="49" stroke="#005DA6" stroke-width="2" />
                         <path d="M36.0139 59.1184L43.1419 52.5801L45.6078 47.6231C46.1434 46.5471 48.2583 46.9153 48.6878 48.0365C49.1133 49.1495 48.6369 52.101 48.049 53.1578L45.7909 57.2073L54.0837 56.698C55.2912 56.6241 56.4409 57.5112 56.4409 58.7131C56.4409 59.7673 55.8103 60.705 54.841 60.9815C54.7047 61.0199 54.0989 61.0705 53.9502 61.0568L53.7409 61.039L54.5353 61.5401C54.9167 61.7796 55.1783 62.1931 55.2072 62.5764C55.2788 63.5155 54.7336 64.3656 53.9144 64.7339C53.7808 64.7941 53.0772 64.775 52.9313 64.8078C53.047 64.879 53.7189 65.0255 53.8194 65.1158C54.2242 65.4786 54.4954 65.9906 54.5395 66.5711C54.6111 67.5115 54.0645 68.3631 53.2438 68.7299C53.1117 68.7888 52.1107 68.8025 51.9647 68.8353C52.1465 68.9476 53.1722 69.1174 53.3154 69.2748C53.628 69.6211 53.8331 70.0688 53.8703 70.5657C53.9612 71.765 53.0511 72.8834 51.8436 72.9094L42.9518 73.1024C39.7135 73.1723 36.8854 71.3803 35.2415 68.9284" stroke="#005DA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -323,7 +361,7 @@
                     </svg></div>
                 <div class="text-white fs-18 fw-300">Customer Satisfaction Guaranteed</div>
             </div>
-            <div class="col-md-4" data-aos="fade-up">
+            <div class="col-md-4 text-center text-md-start" data-aos="fade-up">
                 <div><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="50" cy="50" r="48.5" stroke="#005DA6" stroke-width="3" />
                         <path d="M58.9282 51.2788C61.8454 43.6711 58.0076 35.1525 50.356 32.252C42.7045 29.3514 34.1369 33.1673 31.2196 40.7751C28.3024 48.3828 32.1403 56.9014 39.7918 59.8019C47.4433 62.7025 56.011 58.8866 58.9282 51.2788Z" stroke="#005DA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -336,7 +374,7 @@
                     </svg></div>
                 <div class="text-white fs-18 fw-300">We Care About the Details</div>
             </div>
-            <div class="col-md-4" data-aos="fade-up">
+            <div class="col-md-4 text-center text-md-start" data-aos="fade-up">
                 <div><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="50" cy="50" r="48.5" stroke="#005DA6" stroke-width="3" />
                         <path d="M26.4245 57.3936C25.9431 57.617 25.4678 57.9405 24.9844 58.2765C24.1679 58.843 23.3229 59.4471 22.356 59.6812C22.0818 59.7742 21.7995 59.8296 21.507 59.8332C21.2145 59.8367 20.9119 59.7867 20.597 59.6687C20.595 59.6669 20.593 59.6634 20.5909 59.6616L20.5848 59.6544C20.5706 59.6509 20.5584 59.6473 20.5442 59.6437C20.53 59.6401 20.5178 59.6366 20.5036 59.633C20.2558 59.3577 20.1034 59.0682 20.0202 58.7715C19.9389 58.4748 19.9267 58.1674 19.9653 57.8547C19.9653 56.9878 20.2984 56.1175 20.6031 55.281C20.9098 54.4446 21.1861 53.6421 21.0723 52.9111C20.7433 52.1069 19.8719 51.5403 18.9619 50.9451C18.0519 50.35 17.1034 49.7262 16.622 48.8076C16.5123 48.6342 16.427 48.4483 16.3701 48.2482C16.3153 48.048 16.2889 47.8335 16.299 47.6012C16.299 47.5797 16.299 47.5583 16.297 47.5386C16.297 47.5172 16.297 47.4957 16.297 47.4743C16.4798 47.2062 16.6951 46.9989 16.9348 46.8416C17.1745 46.6843 17.4405 46.5753 17.7249 46.5002C18.641 46.1553 19.6952 46.1714 20.7047 46.1857C21.7142 46.1982 22.681 46.2071 23.4244 45.8461C24.1008 45.2974 24.4035 44.377 24.7224 43.4172C25.0413 42.4575 25.3784 41.4584 26.1259 40.7542C26.2803 40.5773 26.4611 40.42 26.6703 40.2931C26.8815 40.1644 27.1232 40.0643 27.4035 40C27.4076 40 27.4117 40.0018 27.4157 40.0036L27.4279 40.0071C27.4279 40.0071 27.436 40.0054 27.4401 40.0036L27.4523 40C27.7326 40.0661 27.9743 40.1662 28.1835 40.2931C28.3948 40.4218 28.5735 40.5773 28.7279 40.7542C29.1037 41.1099 29.3758 41.5406 29.5952 42.0035" stroke="#005DA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -381,16 +419,16 @@
                     <div class="header-divider-invert"></div>
                     <form action="./src/form" method="POST">
                         <div class="row g-3">
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <input type="text" class="form-control" name="name" placeholder="Name" required>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <input type="tel" class="form-control" name="phone" placeholder="Number" required>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <input type="email" class="form-control" name="email" placeholder="Email" required>
                             </div>
-                            <div class="col-6">
+                            <div class="col-md-6">
                                 <select name="service" class="form-control form-select">
                                     <option>Select service</option>
                                     <option>Switchboard Installations/Upgrades</option>
@@ -404,7 +442,7 @@
                             </div>
                         </div>
                         <div class="pt-4">
-                            <button type="submit" class="btn btn-black border-0 rounded-0 text-white py-3 px-md-4 move-arrow">SUBMIT <span class="adjacent-arrow"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <button type="submit" class="btn btn-black border-0 rounded-0 text-white py-3 px-4 move-arrow">SUBMIT <span class="adjacent-arrow d-none d-md-block"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 4.323C0.626102 4.323 0.322997 4.6261 0.322997 5C0.322997 5.3739 0.626101 5.677 1 5.677L1 4.323ZM12.4787 5.47871C12.7431 5.21433 12.7431 4.78567 12.4787 4.52129L8.17029 0.212865C7.90591 -0.0515212 7.47725 -0.0515212 7.21286 0.212865C6.94848 0.477251 6.94848 0.905906 7.21286 1.17029L11.0426 5L7.21286 8.82971C6.94848 9.0941 6.94848 9.52275 7.21286 9.78714C7.47725 10.0515 7.9059 10.0515 8.17029 9.78714L12.4787 5.47871ZM1 5.677L12 5.677L12 4.323L1 4.323L1 5.677Z" fill="white" />
                                     </svg></span></button>
                         </div>
@@ -415,11 +453,11 @@
     </div>
 </section>
 
-<section class="bg-primary py-4">
+<section class="payments py-md-4">
     <div class="container">
-        <div class="row justify-content-center align-items-center gx-5">
-            <div class="col-auto">
-                <div class="fs-25 font-ddt-extended text-white">We accept the following payment methods:</div>
+        <div class="row justify-content-center align-items-center gy-4 gx-5">
+            <div class="col-md-auto">
+                <div class="fs-25 font-ddt-extended text-white text-center heading">We accept the following payment methods:</div>
             </div>
             <div class="col-auto">
                 <?= renderImg('payment.png', 'lib') ?>
@@ -429,23 +467,18 @@
 </section>
 
 <footer>
-    <div class="container">
-        <div class="row justify-content-center justify-content-lg-between align-items-center py-4 fs-12">
+    <div class="container pt-6 pt-md-0">
+        <div class="row justify-content-center justify-content-lg-between align-items-center py-4 fs-12 gy-5">
             <div class="col-auto">
-                <div class="row gx-2 gx-md-3 text-dark justify-content-center">
-                    <div class="col-12 text-center pb-3 d-lg-none">
-                        <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
-                            <?= renderImg("aiims.png", "logo") ?>
-                        </a>
-                    </div>
+                <div class="row gx-4 gx-md-3 text-dark justify-content-center">
                     <div class="col-auto text-center">Copyright <?= date('Y') ?></div>
                     <div class="col-auto text-primary">|</div>
                     <div class="col-auto text-center"><?= $site ?></div>
-                    <div class="col-auto text-primary">|</div>
-                    <div class="col-auto text-center">All Rights Reserved</div>
+                    <div class="col-auto text-primary d-none d-md-block">|</div>
+                    <div class="col-auto text-center d-none d-md-block">All Rights Reserved</div>
                 </div>
             </div>
-            <div class="col-auto d-none d-lg-block">
+            <div class="col-auto">
                 <a href="https://www.aiims.com.au/like-our-work/" target="_blank">
                     <?= renderImg("aiims.png", "logo") ?>
                 </a>
